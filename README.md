@@ -1,4 +1,4 @@
-Lite-Welcome
+Lite Welcome
 =================
 
 The Linux Lite Welcome Screen.
