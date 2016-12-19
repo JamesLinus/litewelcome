@@ -152,17 +152,23 @@ class LiteAppView(WebKit.WebView):
             else:
                       print('lite-software not installed'.format(uri))
 
-        elif uri == 'start_software':
-            if os.path.exists("/usr/bin/lite-software"):
-                Popen(['gksudo', 'lite-software'])
-            else:
-                      print('lite-software not installed'.format(uri))
-
         elif uri == 'install_drivers':
             if os.path.exists("/usr/bin/software-properties-gtk"):
                 Popen(['/usr/bin/software-properties-gtk', '--open-tab=4'])
             else:
                       print('software-properties-gtk not installed'.format(uri))
+
+        elif uri == 'systemback':
+            if os.path.exists("/usr/bin/systemback-sustart"):
+                Popen(['/usr/bin/systemback-sustart'])
+            else:
+                      print('systemback not installed'.format(uri))
+
+        elif uri == 'start_software':
+            if os.path.exists("/usr/bin/lite-software"):
+                Popen(['gksudo', 'lite-software'])
+            else:
+                      print('lite-software not installed'.format(uri))
 
         elif uri == 'upgrade':
             if os.path.exists("/usr/bin/lite-upgrade-series3"):
@@ -172,6 +178,9 @@ class LiteAppView(WebKit.WebView):
 
         elif uri == 'lite-manual':
             Popen(['exo-open', "/usr/share/doc/litemanual/index.html"])
+
+        elif uri == 'sysback':
+            Popen(['exo-open', "file:///usr/share/doc/litemanual/tutorials.html#systembackres"])
 
         elif uri == 'hardware_database':
             Popen(['exo-open', 'https://www.linuxliteos.com/hwdb.html'])
