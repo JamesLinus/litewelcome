@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+chown -R root:root /usr/share/litewelcome
+find /usr/share/litewelcome/ -type d -exec chmod 755 {} \;
+find /usr/share/litewelcome/ -type f -exec chmod 644 {} \;
