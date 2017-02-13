@@ -182,6 +182,10 @@ class LiteAppView(WebKit.WebView):
         elif uri == 'sysback':
             Popen(['exo-open', "file:///usr/share/doc/litemanual/tutorials.html#systembackres"])
 
+        elif uri == 'installlang':
+            Popen(['exo-open', "file:///usr/share/doc/litemanual/install.html#setlang"])
+            Popen(['/usr/bin/gnome-language-selector'])
+
         elif uri == 'hardware_database':
             Popen(['exo-open', 'https://www.linuxliteos.com/hwdb.html'])
 
@@ -201,6 +205,26 @@ class LiteAppView(WebKit.WebView):
         else:
             print('Unknown command: {}'.format(uri))
 
+        """Test env
+
+class WelcomeApp(object):
+    def __init__(self):
+        # establish our location
+        self._location = os.path.dirname(os.path.abspath(inspect.getfile(
+            inspect.currentframe())))
+
+        # check for relative path
+        if os.path.exists(os.path.join(self._location, 'data/')):
+            print('Using relative path for data source. Non-production testing.')
+            self._data_path = os.path.join(self._location, 'data/')
+        elif os.path.exists('/home/jerry/repo/git/litewelcome/usr/share/litewelcome/'):
+            print('Using /home/jerry/repo/git/litewelcome/usr/share/litewelcome/ path.')
+            self._data_path = '/home/jerry/repo/git/litewelcome/usr/share/litewelcome/'
+        else:
+            print('Unable to source the litewelcome data directory.')
+            exit(1)
+
+        """
 
 class WelcomeApp(object):
     def __init__(self):
