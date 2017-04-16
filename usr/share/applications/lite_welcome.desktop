@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Application
-Name=Linux Lite Welcome
+Name=Lite Welcome
 Comment=Linux Lite Welcome Screen
 Exec=lite-welcome
 Categories=X-XFCE;GTK;Settings;HardwareSettings
