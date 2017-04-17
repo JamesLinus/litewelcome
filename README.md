@@ -9,7 +9,7 @@ The Linux Lite Welcome Screen.
 
 This project is under the GPLv3 license. Unless otherwise stated in individual files.
 
-##Authors
+## Authors
 - [Jerry Bezencon](https://github.com/linuxlite/)
 - [Johnathan "ShaggyTwoDope" Jenkins](https://github.com/shaggytwodope/)
 - [Misko-2083](https://github.com/Misko-2083/)
