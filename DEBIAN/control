@@ -6,7 +6,7 @@ Priority: required
 Installed-Size: 1200
 Depends: python-simplejson, libjs-jquery
 Homepage: http://www.linuxliteos.com
-Maintainer: Jerry Bezencon<valtam@linuxliteos.com>
+Maintainer: Jerry Bezencon <valtam@linuxliteos.com>
 Architecture: all
 Description: Linux Lite Welcome Screen
  The Linux Lite Welcome Screen, launches upon the first boot
