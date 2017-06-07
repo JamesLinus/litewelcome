@@ -3,7 +3,7 @@ Lite Welcome
 
 The Linux Lite Welcome Screen.
 
-![](http://imgur.com/oqypuTb.png)
+![](http://imgur.com/6aR2Fab.png)
 
 ## License ![License](https://img.shields.io/badge/license-GPLv3-green.svg)
 
